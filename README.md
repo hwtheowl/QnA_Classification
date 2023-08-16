@@ -127,21 +127,40 @@ ML의 경우, RandomForest, LightGBM, XGBoost, CatBoost, SVM으로 진행해보�
 **DL 1st Model**
 
 ![image](https://github.com/hwtheowl/QnA_Classification/assets/132368135/9d9fbb36-e8fe-4d31-874e-2ca3972d93f1)
+![image](https://github.com/hwtheowl/QnA_Classification/assets/132368135/a37af829-6d84-482e-88af-a6a041437701)
+![image](https://github.com/hwtheowl/QnA_Classification/assets/132368135/d957fc11-edb8-448f-b704-fcb4374960ec)
+
 <br>
 <br>
 
 **DL 2nd Model**
 
 ![image](https://github.com/hwtheowl/QnA_Classification/assets/132368135/aac5e355-4fc0-4cb0-afa2-e3ec40f36fd5)
+![image](https://github.com/hwtheowl/QnA_Classification/assets/132368135/b7b5b01d-f6a4-4859-b900-5c594bef6825)
+![image](https://github.com/hwtheowl/QnA_Classification/assets/132368135/5e5eeb73-430a-47a4-9e8c-341406cededa)
 
-DL의 경우 
-
-
+DL의 경우 Dense layer, BatchNomalization, Dropout을 이용한 간단한 설계를 한 모델과 RNN을 이용한 모델 총 두가지 버전으로 만듬
+DL 첫번째 모델 정확도 0.74, 두번째 모델 정확도 0.4717의 정확도를 가짐
+<br>
 <br>
 <br>
 
 ## 결론
+최종 정확도에서 가장 준수한 성능을 보인 **CatBoost**모델을 df2_cnt(불용어 처리를 완료, CountVect를 사용한 데이터셋)으로 학습한 모델 선정
+
+![image](https://github.com/hwtheowl/QnA_Classification/assets/132368135/e3011e2e-9c46-43cb-a3a2-c5e6430c0e36)
+![image](https://github.com/hwtheowl/QnA_Classification/assets/132368135/46a8289f-2ffd-404e-ae6c-e67c5f5853b7)
+
+테스트 결과 입력값이 주어지면 해당 텍스트의 질문 유형이 나오도록 설계완료
+
 <br>
 <br>
 
 ## 프로젝트를 통해 느낀점
+모델 설계에 대해 다시 생각해보는 프로젝트였습니다.
+
+DL열풍에 나도 모르게 ML은 DL보다는 성능이 떨어진다라고 생각하였지만, 설계 및 학습에 따라서는 ML이 더 우수한 성능을 보이기도 한다는것을 제대로 느꼈습니다. 설계, 전처리, 학습 등 저의 실력이 부족하여 만족스러운 결과를 얻지는 못하였지만 그렇기에 얻은게 있다고 생각하고 추후에는 이번 프로젝트를 경험삼아 더 나은 결과물을 뽑아낼 수 있다고 생각합니다.
+
+사실 토큰화 작업을 할 때, 환경이슈로 Khaiii를 사용하기 위해 굉장히 애를 먹었습니다. 그 외에도 계속되는 문제를 맞딱드리며 순탄하게 진행하지는 못했지만, 이런 문제들을 스스로 해결해나가며 문제 해결 능력을 기를 수 있었고 포기하지 않고 계속 해나감으로써 결과물을 만들수 있었습니다. 그리고 결과물이 나왔을때 "해냈다."라는 생각과 **힘들지만 코딩이 재밌다.** 라는 다시한번 되뇌었습니다.
+
+부족한게 많지만 더 공부해가며 발전 할 수 있는 가능성을 보여준 프로젝트였습니다.
